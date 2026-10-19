@@ -51,6 +51,12 @@ export default [
         element: <routes.Addons />,
     },
     {
+        // Fork-local: YouTube Links page (kanedark316/stremio-web)
+        path: '/links',
+        view: 3,
+        element: <routes.Links />,
+    },
+    {
         path: '/settings',
         view: 3,
         element: <routes.Settings />,
