@@ -1,0 +1,15 @@
+# Cloudflare Pages — optional local/CLI reference.
+# Git-connected deploys also need matching dashboard settings (see DEPLOY.md).
+#
+# UI-only static host. Full Stremio streaming still needs a Stremio account,
+# addons you choose, and (for torrents/local) the desktop streaming server.
+# Do not ship piracy-oriented addons with this project.
+
+name = "steemset-web"
+compatibility_date = "2026-03-20"
+pages_build_output_dir = "build"
+
+# Node version for Pages builds: repo `.nvmrc` is `22` (also set NODE_VERSION=22
+# in the Cloudflare Pages → Settings → Environment variables if needed).
+# Build command (dashboard): pnpm run build
+# Install: Cloudflare detects pnpm from pnpm-lock.yaml / packageManager field.

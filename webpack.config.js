@@ -240,6 +240,8 @@ module.exports = (env, argv) => ({
                 { from: 'assets/screenshots/*.webp', to: 'screenshots/[name][ext]' },
                 { from: '.well-known', to: '.well-known' },
                 { from: 'manifest.json', to: 'manifest.json' },
+                // Cloudflare Pages SPA fallback (see DEPLOY.md / _redirects)
+                { from: '_redirects', to: '_redirects' },
             ]
         }),
         new MiniCssExtractPlugin({

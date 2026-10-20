@@ -1,0 +1,4 @@
+# Cloudflare Pages SPA fallback (safety net).
+# Routing is HashRouter (#/...), so deep links already stay on index.html;
+# this covers any non-hash path hits the same way.
+/*    /index.html   200

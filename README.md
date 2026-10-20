@@ -79,6 +79,12 @@ docker build -t stremio-web .
 docker run -p 8080:8080 stremio-web
 ```
 
+## Deploy (Cloudflare Pages)
+
+Recommended free host for this static webpack SPA: **Cloudflare Pages** (output dir `build/`). See **[DEPLOY.md](./DEPLOY.md)** for dashboard settings (`pnpm run build`, Node 22, SPA `_redirects`).
+
+This hosts the **UI only**. Full Stremio use still needs your Stremio account, legitimate addons, and (for torrents/local) the desktop streaming server — do not add pirate addons.
+
 ## ­ƒñØ Contributing
 
 Bug reports and pull requests are welcome ÔÇö [`good first issue`](https://github.com/Stremio/stremio-web/labels/good%20first%20issue) is a great place to start. Want Stremio in your language? Contribute to [stremio-translations](https://github.com/Stremio/stremio-translations). Please read the [Code of Conduct](/CODE_OF_CONDUCT.md) first.
